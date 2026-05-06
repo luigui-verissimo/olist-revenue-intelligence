@@ -1,6 +1,6 @@
 import pandas as pd
 
-from data_ingestion import build_revenue_base
+from src.data_ingestion import build_revenue_base 
 
 
 def analyze_monthly_revenue():
@@ -21,7 +21,7 @@ def analyze_monthly_revenue():
         .sum()
         .sort_index()
     )
-
+    
 
     best_month = monthly_revenue.idxmax()
     best_revenue = monthly_revenue.max()
@@ -42,7 +42,7 @@ def analyze_monthly_revenue():
     print("\nAverage Growth (%):")
     print(f"{average_growth:.2f}%")
 
-    return monthly_revenue
+    return clean_revenue
 
 
 if __name__ == "__main__":
