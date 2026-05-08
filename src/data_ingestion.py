@@ -75,6 +75,62 @@ def build_revenue_base() -> pd.DataFrame:
 
     return merged_df
 
+def build_marketplace_base() -> pd.DataFrame:
+
+    orders_df = load_dataset(
+        "olist_orders_dataset.csv"
+    )
+
+    items_df = load_dataset(
+        "olist_order_items_dataset.csv"
+    )
+
+    payments_df = load_dataset(
+        "olist_order_payments_dataset.csv"
+    )
+
+    products_df = load_dataset(
+        "olist_products_dataset.csv"
+    )
+
+    payments_df = (
+        payments_df
+        .groupby("order_id", as_index=False)
+        .agg({
+            "payment_value": "sum"
+        })
+    )
+
+    marketplace_df = (
+        items_df
+        .merge(
+            orders_df,
+            on="order_id",
+            how="left"
+        )
+        .merge(
+            payments_df,
+            on="order_id",
+            how="left"
+        )
+        .merge(
+            products_df[
+                [
+                    "product_id",
+                    "product_category_name"
+                ]
+            ],
+            on="product_id",
+            how="left"
+        )
+    )
+
+    print("Marketplace base created successfully.")
+    print(f"Rows: {marketplace_df.shape[0]}")
+    print(f"Columns: {marketplace_df.shape[1]}")
+
+    return marketplace_df
+
 
 if __name__ == "__main__":
     df = build_revenue_base()
