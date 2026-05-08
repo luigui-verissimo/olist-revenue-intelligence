@@ -30,18 +30,6 @@ def analyze_monthly_revenue():
     growth = clean_revenue.pct_change() * 100
     average_growth = growth.mean()
 
-    print("\nMonthly Revenue:")
-    print(monthly_revenue)
-
-    print("\nBest Revenue Month:")
-    print(f"{best_month} -> {best_revenue:,.2f}")
-
-    print("\nMonthly Growth (%):")
-    print(growth)
-
-    print("\nAverage Growth (%):")
-    print(f"{average_growth:.2f}%")
-
     return clean_revenue
 
 

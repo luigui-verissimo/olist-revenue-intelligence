@@ -36,8 +36,8 @@ Current focus:
 
 ### Contact
 
-💼 LinkedIn: *(Add your link)*  
-🚀 GitHub: *(Add your link)*  
+💼 LinkedIn: *www.linkedin.com/in/luigui-verissimo*  
+🚀 GitHub: *https://github.com/luigui-verissimo*  
 
 ---
 
@@ -199,8 +199,8 @@ Foco atual:
 
 ### Contato
 
-💼 LinkedIn: *(Adicione seu link)*  
-🚀 GitHub: *(Adicione seu link)*  
+💼 LinkedIn: *www.linkedin.com/in/luigui-verissimo*  
+🚀 GitHub: *https://github.com/luigui-verissimo*  
 
 ---
 
