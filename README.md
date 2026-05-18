@@ -1,331 +1,163 @@
-# 📊 Brazilian E-Commerce Revenue & Growth Intelligence
+# 📊 Olist Revenue Intelligence
 
-This project is part of my **Technical Evolution Plan (PET)**, a structured portfolio journey focused on building real-world skills in **Data Analytics**, **Business Intelligence**, and **Strategic Problem Solving**.
-
-The project uses real-world Brazilian e-commerce data to simulate how companies use data to drive **revenue growth**, **customer retention**, and **market expansion**.
-
-#### 🚀 Project Status: Active Development
+## 🇺🇸 English | 🇧🇷 Português
 
 ---
 
-# 🇺🇸 English Version
+# ⚡ Executive Summary
 
-## 🎯 Project Intro / Objective
+## 🇺🇸 English
 
-The purpose of this project is to analyze one of Brazil's largest public e-commerce datasets and identify the key drivers behind revenue growth, customer behavior, and market performance.
+This project analyzes revenue behavior in a Brazilian e-commerce marketplace to understand:
 
-Using real-world business data, this project investigates how customer purchasing behavior, product categories, regional demand, and seasonal patterns impact overall business performance.
+- Revenue concentration across sellers
+- Business risks of dependency
+- Growth opportunities for the platform
 
-The final objective is to transform raw operational data into actionable business insights, replicating the workflow of a professional data analyst.
+### Key Insight:
+📌 **~87% of revenue comes from Top Performers**
 
----
-
-## 👨‍💻 Project Owner
-
-### Luigui Veríssimo
-
-Aspiring Data Analyst from Brazil.
-
-Current focus:
-
-- Data Analytics
-- Business Intelligence
-- Python
-- SQL
-- Global Career Development
-
-### Contact
-
-💼 LinkedIn: *www.linkedin.com/in/luigui-verissimo*  
-🚀 GitHub: *https://github.com/luigui-verissimo*  
+This reveals a strong dependency on a small group of sellers.
 
 ---
 
-## 🔬 Methods Used
+## 🇧🇷 Português
 
-- Exploratory Data Analysis (EDA)
-- Data Cleaning & Validation
-- Business KPI Analysis
-- Geographic Analysis
-- Trend Analysis
-- Hypothesis-Driven Analytics
+Este projeto analisa o comportamento de receita em um marketplace brasileiro para entender:
 
----
+- Concentração de receita entre sellers
+- Riscos de dependência do negócio
+- Oportunidades de crescimento da plataforma
 
-## 🛠 Technologies
+### Insight principal:
+📌 **~87% da receita vem dos Top Performers**
 
-- Python
-- Pandas
-- SQL
-- Matplotlib
-- Jupyter Notebook
-- Visual Studio Code
-- Git
-- GitHub
-- Markdown
+Isso revela forte dependência de poucos sellers.
 
 ---
 
-## 📋 Project Description
+# 🎯 Business Problem
 
-This project uses the public Brazilian e-commerce dataset from Olist to investigate key business questions such as:
-
-### Revenue & Growth
-- What drives revenue growth?
-- Is there seasonality in sales?
-
-### Customer Intelligence
-- Which customer segments generate more value?
-- Which customers purchase more frequently?
-
-### Product Intelligence
-- Which product categories perform best?
-
-### Geographic Intelligence
-- Which regions generate the highest revenue?
-
-### Current Challenges
-
-- Managing multi-table joins
-- Preserving data granularity
-- Building reliable business KPIs
-- Transforming data into actionable recommendations
+How is revenue distributed across sellers, and what risks and opportunities does this create for the marketplace?
 
 ---
 
-## 🎯 Project Needs
+# 📊 Key Insights
 
-This project currently focuses on:
+## 1. Revenue Concentration Risk
 
-- Data exploration
-- Data cleaning
-- Feature engineering
-- Business analysis
-- Data visualization
-- Business storytelling
-- Documentation
+Top Performers dominate the marketplace with **~87% of total revenue**.
 
 ---
 
-## 🚀 Getting Started
+## 2. Business Risk
 
-### 1. Clone this repository
+This structure creates:
 
-```bash
-git clone https://github.com/YOUR_USERNAME/brazilian-ecommerce-revenue-growth-intelligence.git
-```
+- High dependency on few sellers  
+- Revenue instability risk  
+- Low diversification  
 
-### 2. Navigate into the project folder
+---
 
-```bash
-cd brazilian-ecommerce-revenue-growth-intelligence
-```
+## 3. Growth Opportunity
 
-### 3. Install project dependencies
+The platform can improve by:
 
-```bash
-pip install -r requirements.txt
-```
+- Developing Emerging sellers  
+- Reducing revenue concentration  
+- Strengthening long-term sustainability  
 
-### 4. Raw data location
+---
 
-Raw data is stored inside:
+# 🧠 Project Structure
 
-```bash
-data/raw_data/
-```
 
-### 5. Analysis scripts
-
-Scripts and notebooks are stored inside:
-
-```bash
-src/
 notebooks/
-```
+├── 01_revenue_analysis.ipynb
+├── 02_visualizations.ipynb
+├── 03_business_insights.ipynb
+├── 04_business_recommendations.ipynb
+├── 05_executive_summary.ipynb
 
----
-
-## 📈 Featured Analysis / Deliverables
-
-Planned deliverables:
-
-- Revenue trend analysis
-- Customer segmentation insights
-- Product performance analysis
-- Geographic sales intelligence
-- Strategic business recommendations
-
----
-
-## 🔮 Future Improvements
-
-Planned next steps:
-
-- Interactive dashboards
-- Predictive analytics
-- Customer clustering
-- Revenue forecasting
-
----
-
----
-
-# 🇧🇷 Versão em Português
-
-## 🎯 Introdução / Objetivo
-
-O objetivo deste projeto é analisar um dos maiores datasets públicos de e-commerce do Brasil para identificar os principais fatores por trás do crescimento de receita, comportamento do consumidor e performance de mercado.
-
-Utilizando dados reais de negócio, este projeto investiga como comportamento de compra, categorias de produtos, demanda regional e sazonalidade impactam os resultados da empresa.
-
-O objetivo final é transformar dados operacionais em insights acionáveis, simulando o fluxo de trabalho de um analista de dados profissional.
-
----
-
-## 👨‍💻 Autor do Projeto
-
-### Luigui Veríssimo
-
-Aspirante a Data Analyst no Brasil.
-
-Foco atual:
-
-- Data Analytics
-- Business Intelligence
-- Python
-- SQL
-- Desenvolvimento de carreira internacional
-
-### Contato
-
-💼 LinkedIn: *www.linkedin.com/in/luigui-verissimo*  
-🚀 GitHub: *https://github.com/luigui-verissimo*  
-
----
-
-## 🔬 Métodos Utilizados
-
-- Análise Exploratória de Dados (EDA)
-- Limpeza e validação de dados
-- Análise de KPIs de negócio
-- Análise geográfica
-- Análise temporal
-- Análise orientada por hipóteses
-
----
-
-## 🛠 Tecnologias
-
-- Python
-- Pandas
-- SQL
-- Matplotlib
-- Jupyter Notebook
-- Visual Studio Code
-- Git
-- GitHub
-- Markdown
-
----
-
-## 📋 Descrição do Projeto
-
-Este projeto utiliza o dataset público da Olist para investigar perguntas estratégicas como:
-
-### Receita & Crescimento
-- O que impulsiona o crescimento da receita?
-- Existe sazonalidade nas vendas?
-
-### Inteligência de Clientes
-- Quais segmentos geram mais valor?
-- Quais clientes compram com maior frequência?
-
-### Inteligência de Produtos
-- Quais categorias performam melhor?
-
-### Inteligência Geográfica
-- Quais regiões geram maior receita?
-
-### Desafios Atuais
-
-- Gerenciar múltiplos joins
-- Preservar granularidade dos dados
-- Construir KPIs confiáveis
-- Transformar dados em recomendações estratégicas
-
----
-
-## 🎯 Necessidades do Projeto
-
-Este projeto atualmente foca em:
-
-- Exploração de dados
-- Limpeza de dados
-- Engenharia de atributos
-- Análise de negócio
-- Visualização de dados
-- Storytelling com dados
-- Documentação
-
----
-
-## 🚀 Como Executar
-
-### 1. Clone este repositório
-
-```bash
-git clone https://github.com/YOUR_USERNAME/brazilian-ecommerce-revenue-growth-intelligence.git
-```
-
-### 2. Entre na pasta do projeto
-
-```bash
-cd brazilian-ecommerce-revenue-growth-intelligence
-```
-
-### 3. Instale as dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Dados brutos
-
-Os dados estão em:
-
-```bash
-data/raw_data/
-```
-
-### 5. Scripts e análises
-
-Arquivos localizados em:
-
-```bash
 src/
-notebooks/
-```
+├── load_data.py
+├── data_ingestion.py
+├── revenue_analysis.py
+
+outputs/
+├── figures/
+├── tables/
+├── reports/
+
 
 ---
 
-## 📈 Entregáveis
+# 🛠️ Tech Stack
 
-Entregas planejadas:
-
-- Análise de receita
-- Segmentação de clientes
-- Performance de produtos
-- Inteligência geográfica
-- Recomendações estratégicas
+- Python (data analysis)
+- Pandas (data manipulation)
+- Matplotlib (data visualization)
+- Git (version control)
 
 ---
 
-## 🔮 Próximas Evoluções
+# 💼 Business Impact
 
-Melhorias planejadas:
+This project simulates real analytical workflows used in companies like:
 
-- Dashboards interativos
-- Modelos preditivos
-- Clusterização de clientes
-- Previsão de receita
+- E-commerce marketplaces  
+- Fintech platforms  
+- Data-driven businesses  
+
+It demonstrates the ability to transform raw data into **business decisions and strategic insights**.
+
+---
+
+# 📈 What I Learned
+
+- End-to-end data analysis pipeline  
+- Business-oriented thinking  
+- Revenue concentration analysis  
+- Data storytelling  
+- Structured GitHub organization  
+
+---
+
+# 🎯 Career Objective
+
+This project is part of my journey toward:
+
+- 🎓 Jovem Aprendiz opportunities  
+- 📊 Entry-level Data/Business roles  
+- 🌍 Future international career in tech  
+
+---
+
+# 📬 Contact
+
+## 🇺🇸 English
+
+I am currently building my foundation in Data Analytics and Business Analysis through hands-on projects.
+
+I am open to learning opportunities such as:
+- Young Apprentice programs
+- Entry-level analytics roles
+- Internship opportunities in data or business teams
+
+- 🔗 LinkedIn: www.linkedin.com/in/luigui-verissimo  
+- 📧 Email: luigui.vbb01@gmail.com  
+
+---
+
+## 🇧🇷 Português
+
+Atualmente estou construindo minha base em Análise de Dados e Negócios através de projetos práticos.
+
+Estou aberto a oportunidades de aprendizado como:
+- Programas de Jovem Aprendiz
+- Vagas de entrada em análise de dados/negócios
+- Estágios em áreas de dados ou business
+
+- 🔗 LinkedIn: www.linkedin.com/in/luigui-verissimo  
+- 📧 Email: luigui.vbb01@gmail.com  
