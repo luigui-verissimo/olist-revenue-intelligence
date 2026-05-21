@@ -1,331 +1,374 @@
-# 📊 Brazilian E-Commerce Revenue & Growth Intelligence
+# 📊 Olist Revenue Intelligence
 
-This project is part of my **Technical Evolution Plan (PET)**, a structured portfolio journey focused on building real-world skills in **Data Analytics**, **Business Intelligence**, and **Strategic Problem Solving**.
+Análise estratégica de receita em marketplace com foco em concentração de sellers, dependência de categorias e geração de insights de negócio para tomada de decisão.
 
-The project uses real-world Brazilian e-commerce data to simulate how companies use data to drive **revenue growth**, **customer retention**, and **market expansion**.
+<br>
 
-#### 🚀 Project Status: Active Development
-
----
-
-# 🇺🇸 English Version
-
-## 🎯 Project Intro / Objective
-
-The purpose of this project is to analyze one of Brazil's largest public e-commerce datasets and identify the key drivers behind revenue growth, customer behavior, and market performance.
-
-Using real-world business data, this project investigates how customer purchasing behavior, product categories, regional demand, and seasonal patterns impact overall business performance.
-
-The final objective is to transform raw operational data into actionable business insights, replicating the workflow of a professional data analyst.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge\&logo=python\&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge\&logo=pandas\&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge\&logo=jupyter\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+![Data Analytics](https://img.shields.io/badge/Data-Analytics-blue?style=for-the-badge)
 
 ---
 
-## 👨‍💻 Project Owner
-
-### Luigui Veríssimo
-
-Aspiring Data Analyst from Brazil.
-
-Current focus:
-
-- Data Analytics
-- Business Intelligence
-- Python
-- SQL
-- Global Career Development
-
-### Contact
-
-💼 LinkedIn: *www.linkedin.com/in/luigui-verissimo*  
-🚀 GitHub: *https://github.com/luigui-verissimo*  
+# 🇧🇷 Português | 🇺🇸 English
 
 ---
 
-## 🔬 Methods Used
+# ⚡ Executive Summary
 
-- Exploratory Data Analysis (EDA)
-- Data Cleaning & Validation
-- Business KPI Analysis
-- Geographic Analysis
-- Trend Analysis
-- Hypothesis-Driven Analytics
+## 🇧🇷 Português
 
----
+Este projeto realiza uma análise de receita dentro do ecossistema de marketplace da Olist com foco em:
 
-## 🛠 Technologies
+* concentração de sellers;
+* dependência de categorias;
+* riscos estruturais;
+* oportunidades estratégicas de crescimento.
 
-- Python
-- Pandas
-- SQL
-- Matplotlib
-- Jupyter Notebook
-- Visual Studio Code
-- Git
-- GitHub
-- Markdown
+A análise mostrou que o marketplace possui forte dependência de um pequeno grupo de sellers de alta performance e de categorias dominantes, criando eficiência operacional, mas também riscos de concentração.
+
+### Principais Descobertas
+
+* 📌 Top Performers geram **86,79%** da receita total
+* 📌 17,9% dos sellers representam **80,03%** da receita
+* 📌 As 10 principais categorias representam **63,68%** da receita total
+* 📌 `cama_mesa_banho` sozinha gera aproximadamente **R$ 1,7 milhão**
+* 📌 Os 10 maiores sellers representam aproximadamente **14%** da receita do marketplace
 
 ---
 
-## 📋 Project Description
+## 🇺🇸 English
 
-This project uses the public Brazilian e-commerce dataset from Olist to investigate key business questions such as:
+This project analyzes marketplace revenue concentration within the Olist ecosystem to identify seller dependency patterns, structural risks, and business growth opportunities.
 
-### Revenue & Growth
-- What drives revenue growth?
-- Is there seasonality in sales?
+### Key Findings
 
-### Customer Intelligence
-- Which customer segments generate more value?
-- Which customers purchase more frequently?
-
-### Product Intelligence
-- Which product categories perform best?
-
-### Geographic Intelligence
-- Which regions generate the highest revenue?
-
-### Current Challenges
-
-- Managing multi-table joins
-- Preserving data granularity
-- Building reliable business KPIs
-- Transforming data into actionable recommendations
+* Top Performers generate ~87% of total revenue
+* 17.9% of sellers account for ~80% of marketplace revenue
+* Top 10 categories represent ~64% of total revenue
 
 ---
 
-## 🎯 Project Needs
+# 🎯 Problema de Negócio | Business Problem
 
-This project currently focuses on:
-
-- Data exploration
-- Data cleaning
-- Feature engineering
-- Business analysis
-- Data visualization
-- Business storytelling
-- Documentation
+Como a receita do marketplace está distribuída entre sellers e categorias de produtos, e quais riscos estratégicos ou oportunidades de crescimento surgem dessa estrutura de concentração?
 
 ---
 
-## 🚀 Getting Started
+# ❓ Perguntas de Negócio Respondidas
 
-### 1. Clone this repository
+* Quão concentrada é a receita do marketplace?
+* Quais sellers sustentam a performance da plataforma?
+* Quais categorias dominam a receita?
+* O crescimento do marketplace é estável ou volátil?
+* Quais riscos estratégicos existem na dependência de sellers?
+* Como melhorar a sustentabilidade do ecossistema?
 
-```bash
-git clone https://github.com/YOUR_USERNAME/brazilian-ecommerce-revenue-growth-intelligence.git
-```
+---
 
-### 2. Navigate into the project folder
+# 🏪 Contexto do Marketplace
 
-```bash
-cd brazilian-ecommerce-revenue-growth-intelligence
-```
+A Olist é um ecossistema brasileiro de e-commerce focado em conectar pequenas e médias empresas a grandes marketplaces como Mercado Livre e Amazon.
 
-### 3. Install project dependencies
+A plataforma centraliza:
 
-```bash
-pip install -r requirements.txt
-```
+* integração com marketplaces;
+* logística;
+* ERP;
+* gestão de estoque;
+* infraestrutura para vendas online.
 
-### 4. Raw data location
+O objetivo desta análise foi entender como a concentração de receita impacta:
 
-Raw data is stored inside:
+* sustentabilidade do marketplace;
+* dependência comercial;
+* escalabilidade do negócio.
 
-```bash
-data/raw_data/
-```
+---
 
-### 5. Analysis scripts
+# 📈 Executive Visualizations
 
-Scripts and notebooks are stored inside:
+## Marketplace Monthly Revenue Evolution
 
-```bash
-src/
+Visualização da evolução da receita mensal do marketplace ao longo do tempo, destacando crescimento, estabilização e sazonalidade.
+
+![Marketplace Revenue Evolution](outputs/figures/monthly_revenue_trend.png)
+
+---
+
+## Revenue Distribution by Seller Segment
+
+Comparação entre Top Performers e sellers Long Tail para evidenciar concentração extrema de receita.
+
+![Revenue Distribution by Seller Segment](outputs/figures/revenue_by_seller_segment.png)
+
+---
+
+## Top Revenue-Generating Product Categories
+
+Análise das categorias mais relevantes em receita para identificar dependência comercial e concentração vertical.
+
+![Top Categories by Revenue](outputs/figures/top_categories_by_revenue.png)
+
+---
+
+## Top Revenue-Generating Sellers
+
+Visualização dos sellers com maior geração de receita e impacto estratégico no marketplace.
+
+![Top Sellers by Revenue](outputs/figures/top_10_sellers_by_revenue.png)
+
+---
+
+# 🧠 Principais Insights de Negócio
+
+## 1. Forte Concentração de Receita
+
+O marketplace depende estruturalmente de um pequeno grupo de sellers.
+
+### Principais Dados
+
+* 17,9% dos sellers geram ~80% da receita
+* Top Performers concentram ~87% da receita total
+
+### Impacto de Negócio
+
+Essa concentração cria riscos operacionais e financeiros caso sellers estratégicos deixem a plataforma.
+
+---
+
+## 2. Dependência de Categorias
+
+A receita está altamente concentrada em poucas categorias de produtos.
+
+### Principal Descoberta
+
+As 10 maiores categorias representam ~64% da receita total do marketplace.
+
+### Impacto de Negócio
+
+O marketplace se torna vulnerável a:
+
+* sazonalidade;
+* mudanças de demanda;
+* pressão competitiva em categorias dominantes.
+
+---
+
+## 3. Crescimento com Volatilidade
+
+A receita apresentou forte crescimento durante 2017 e estabilização em 2018 acima de R$ 1 milhão mensais.
+
+### Impacto de Negócio
+
+O comportamento sugere:
+
+* expansão acelerada;
+* influência de campanhas;
+* impacto sazonal no crescimento.
+
+---
+
+## 4. Dependência de Sellers Estratégicos
+
+Um pequeno grupo de sellers possui impacto desproporcional na performance do marketplace.
+
+### Impacto de Negócio
+
+A plataforma deveria priorizar:
+
+* retenção;
+* gestão estratégica de contas;
+* relacionamento premium com sellers relevantes.
+
+---
+
+# 💼 Recomendações Estratégicas
+
+* Desenvolver programas de retenção para Top Performers
+* Reduzir dependência estrutural de sellers dominantes
+* Incentivar crescimento de sellers Emerging
+* Diversificar categorias relevantes
+* Monitorar concentração como KPI estratégico
+* Fortalecer ativação de sellers Long Tail
+
+---
+
+# 🧪 Metodologia Analítica
+
+O projeto seguiu um fluxo de análise orientado a negócio:
+
+1. Data ingestion e preprocessing
+2. Construção da base analítica
+3. Agregação de receita
+4. Análise de concentração de sellers
+5. Análise de Pareto
+6. Segmentação de sellers
+7. Análise de categorias
+8. Visualização temporal de receita
+9. Geração de insights executivos
+10. Desenvolvimento de recomendações estratégicas
+
+---
+
+# 🏗️ Arquitetura Técnica
+
+## Dataset Utilizado
+
+Brazilian E-Commerce Public Dataset by Olist (Kaggle)
+
+### Tabelas Utilizadas
+
+* Customers
+* Orders
+* Payments
+* Sellers
+* Products
+* Reviews
+* Geolocation
+* Product Categories
+* Order Items
+
+---
+
+# 📂 Estrutura do Projeto
+
+```bash id="e56i7q"
+data/
+├── processed_data/
+└── raw_data/
+    ├── olist_customers_dataset.csv
+    ├── olist_geolocation_dataset.csv
+    ├── olist_orders_dataset.csv
+    ├── olist_order_items_dataset.csv
+    ├── olist_order_payments_dataset.csv
+    ├── olist_order_reviews_dataset.csv
+    ├── olist_products_dataset.csv
+    ├── olist_sellers_dataset.csv
+    └── product_category_name_translation.csv
+
 notebooks/
-```
+├── 01_revenue_analysis.ipynb
+├── 02_visualizations.ipynb
+├── 03_business_insights.ipynb
+├── 04_business_recommendations.ipynb
+└── 05_executive_summary.ipynb
 
----
+outputs/
+├── figures/
+├── reports/
+└── tables/
 
-## 📈 Featured Analysis / Deliverables
-
-Planned deliverables:
-
-- Revenue trend analysis
-- Customer segmentation insights
-- Product performance analysis
-- Geographic sales intelligence
-- Strategic business recommendations
-
----
-
-## 🔮 Future Improvements
-
-Planned next steps:
-
-- Interactive dashboards
-- Predictive analytics
-- Customer clustering
-- Revenue forecasting
-
----
-
----
-
-# 🇧🇷 Versão em Português
-
-## 🎯 Introdução / Objetivo
-
-O objetivo deste projeto é analisar um dos maiores datasets públicos de e-commerce do Brasil para identificar os principais fatores por trás do crescimento de receita, comportamento do consumidor e performance de mercado.
-
-Utilizando dados reais de negócio, este projeto investiga como comportamento de compra, categorias de produtos, demanda regional e sazonalidade impactam os resultados da empresa.
-
-O objetivo final é transformar dados operacionais em insights acionáveis, simulando o fluxo de trabalho de um analista de dados profissional.
-
----
-
-## 👨‍💻 Autor do Projeto
-
-### Luigui Veríssimo
-
-Aspirante a Data Analyst no Brasil.
-
-Foco atual:
-
-- Data Analytics
-- Business Intelligence
-- Python
-- SQL
-- Desenvolvimento de carreira internacional
-
-### Contato
-
-💼 LinkedIn: *www.linkedin.com/in/luigui-verissimo*  
-🚀 GitHub: *https://github.com/luigui-verissimo*  
-
----
-
-## 🔬 Métodos Utilizados
-
-- Análise Exploratória de Dados (EDA)
-- Limpeza e validação de dados
-- Análise de KPIs de negócio
-- Análise geográfica
-- Análise temporal
-- Análise orientada por hipóteses
-
----
-
-## 🛠 Tecnologias
-
-- Python
-- Pandas
-- SQL
-- Matplotlib
-- Jupyter Notebook
-- Visual Studio Code
-- Git
-- GitHub
-- Markdown
-
----
-
-## 📋 Descrição do Projeto
-
-Este projeto utiliza o dataset público da Olist para investigar perguntas estratégicas como:
-
-### Receita & Crescimento
-- O que impulsiona o crescimento da receita?
-- Existe sazonalidade nas vendas?
-
-### Inteligência de Clientes
-- Quais segmentos geram mais valor?
-- Quais clientes compram com maior frequência?
-
-### Inteligência de Produtos
-- Quais categorias performam melhor?
-
-### Inteligência Geográfica
-- Quais regiões geram maior receita?
-
-### Desafios Atuais
-
-- Gerenciar múltiplos joins
-- Preservar granularidade dos dados
-- Construir KPIs confiáveis
-- Transformar dados em recomendações estratégicas
-
----
-
-## 🎯 Necessidades do Projeto
-
-Este projeto atualmente foca em:
-
-- Exploração de dados
-- Limpeza de dados
-- Engenharia de atributos
-- Análise de negócio
-- Visualização de dados
-- Storytelling com dados
-- Documentação
-
----
-
-## 🚀 Como Executar
-
-### 1. Clone este repositório
-
-```bash
-git clone https://github.com/YOUR_USERNAME/brazilian-ecommerce-revenue-growth-intelligence.git
-```
-
-### 2. Entre na pasta do projeto
-
-```bash
-cd brazilian-ecommerce-revenue-growth-intelligence
-```
-
-### 3. Instale as dependências
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Dados brutos
-
-Os dados estão em:
-
-```bash
-data/raw_data/
-```
-
-### 5. Scripts e análises
-
-Arquivos localizados em:
-
-```bash
 src/
-notebooks/
+├── data_ingestion.py
+├── load_data.py
+└── revenue_analysis.py
 ```
 
 ---
 
-## 📈 Entregáveis
+# 🛠️ Tech Stack
 
-Entregas planejadas:
+## Analytics
 
-- Análise de receita
-- Segmentação de clientes
-- Performance de produtos
-- Inteligência geográfica
-- Recomendações estratégicas
+* Python
+* Pandas
+* Matplotlib
+* Jupyter Notebooks
+
+## Development
+
+* Git
+* GitHub
 
 ---
 
-## 🔮 Próximas Evoluções
+# 🚀 Como Executar o Projeto
 
-Melhorias planejadas:
+## 1. Clonar o repositório
 
-- Dashboards interativos
-- Modelos preditivos
-- Clusterização de clientes
-- Previsão de receita
+```bash id="7sw1m0"
+git clone https://github.com/luigui-verissimo/olist-revenue-intelligence.git
+```
+
+---
+
+## 2. Entrar na pasta do projeto
+
+```bash id="9g0fxd"
+cd olist-revenue-intelligence
+```
+
+---
+
+## 3. Instalar dependências
+
+```bash id="w44lb6"
+pip install pandas matplotlib notebook
+```
+
+---
+
+## 4. Executar o Jupyter Notebook
+
+```bash id="fktg80"
+jupyter notebook
+```
+
+---
+
+# 📚 Principais Aprendizados
+
+* Análise de dados orientada a negócio
+* Revenue concentration analysis
+* Business intelligence workflows
+* Data storytelling executivo
+* Visualização profissional de dados
+* Estruturação de projetos analíticos
+* Organização de workflow com Git
+
+---
+
+# 💼 Business Impact
+
+Este projeto simula workflows analíticos reais utilizados em:
+
+* marketplaces;
+* empresas data-driven;
+* plataformas digitais;
+* ecossistemas de e-commerce.
+
+A análise demonstra como dados transacionais podem ser transformados em:
+
+* insights executivos;
+* inteligência comercial;
+* suporte à tomada de decisão;
+* recomendações estratégicas.
+
+---
+
+# 📬 Contato
+
+Atualmente estou desenvolvendo minha base em:
+
+* Data Analytics
+* Business Intelligence
+* Análise Estratégica de Dados
+
+através de projetos práticos focados em resolução de problemas reais de negócio.
+
+* 🔗 LinkedIn: https://www.linkedin.com/in/luigui-verissimo
+* 📧 Email: [luigui.vbb01@gmail.com](mailto:luigui.vbb01@gmail.com)
+
+---
+
+# ⭐ Conclusão Executiva
+
+A análise mostra que o marketplace da Olist atingiu forte escala de receita, mas continua altamente dependente de poucos sellers estratégicos e categorias dominantes.
+
+A sustentabilidade de longo prazo depende da redução de riscos de concentração e da expansão da diversificação de sellers e categorias.
+
+Este projeto transforma dados brutos de marketplace em inteligência de negócio voltada para tomada de decisão estratégica.
